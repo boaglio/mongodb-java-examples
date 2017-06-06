@@ -88,7 +88,7 @@ ALTER TABLE JUG ADD FOREIGN KEY (LOCAL_ID) REFERENCES LOCAL(ID);
 INSERT INTO JUG VALUES(1,'ALJUG','Alagoas Java User Group', 1, 'http://java.net/projects/ALJUG'); 	
 INSERT INTO JUG VALUES(2,'BelJUG','Belém Java User Group',2,'http://www.beljug.com.br');
 INSERT INTO JUG VALUES(3,'CAJU','Cuiabá Java Users',3,'http://www.cajumt.com.br');
-INSERT INTO JUG VALUES(4,'CaJUG','Cariri Java User Group,4, http://www.cajug.org');
+INSERT INTO JUG VALUES(4,'CaJUG','Cariri Java User Group',4,'http://www.cajug.org');
 INSERT INTO JUG VALUES(5,'BarreirasJUG','Grupo de Usuários Java de Barreiras',5,'https://www.java.net/projects/barreirasjug');
 INSERT INTO JUG VALUES(6,'CEJUG','Ceará Java User Group',6,'http://www.cejug.org');
 INSERT INTO JUG VALUES(7,'DFJUG','Brasília Java Users Group',7,'http://www.dfjug.org');
