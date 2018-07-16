@@ -27,16 +27,11 @@ public class JUGsList {
             DocumentCollectionManager collectionManager = collectionFactory.get(DATABASE);
             DocumentQuery query = select().from(DOCUMENT_COLLECTION).where("region").eq("Sudeste").build();
 
-            List<DocumentEntity> documentsFound = collectionManager.select(query);
+            List<DocumentEntity> entities = collectionManager.select(query);
             System.out.println("-------- MongoDB JUG List from REGION 4 (JNoSQL Diana) ------------");
-            DocumentEntity region = documentsFound.get(0);
-            Document jugs = region.getDocuments().get(2);
-            System.out.println("JSON = " + jugs);
 
             System.out.println("-------- List<JUG> ------------");
-            Value jugsList = jugs.getValue();
-            List<org.bson.Document> list = (List<org.bson.Document>) jugsList.get();
-            list.stream().forEach(System.out::println);
+            entities.stream().forEach(System.out::println);
         }
     }
 
