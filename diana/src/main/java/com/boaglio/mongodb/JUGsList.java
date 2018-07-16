@@ -1,7 +1,5 @@
 package com.boaglio.mongodb;
 
-import org.jnosql.diana.api.Value;
-import org.jnosql.diana.api.document.Document;
 import org.jnosql.diana.api.document.DocumentCollectionManager;
 import org.jnosql.diana.api.document.DocumentCollectionManagerFactory;
 import org.jnosql.diana.api.document.DocumentConfiguration;
